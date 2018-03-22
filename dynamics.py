@@ -36,7 +36,7 @@ history = train_hebb(model, dataset, lr = 1e-2, bs = len(dataset))
 print(" -- Plotting the results -- ")
 
 
-#pdf = PdfPages('plots/dynamics.pdf')
+pdf = PdfPages('plots/dynamics.pdf')
 plt.figure(figsize = (10, 6))
 
 plt.subplot(121)
@@ -65,6 +65,5 @@ plt.xscale('log')
 plt.legend()
 
 plt.show()
-#pdf.savefig()
-#pdf.close()
-
+pdf.savefig()
+pdf.close()
